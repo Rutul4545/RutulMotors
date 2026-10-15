@@ -737,6 +737,8 @@ footer a:hover {
 
 </style>
 
+<link rel="stylesheet" href="polish.css">
+
 </head>
 
 <body>
@@ -821,7 +823,7 @@ footer a:hover {
         <div class="hero-stats">
 
             <div class="hero-stat">
-                <strong>11+</strong>
+                <strong>40+</strong>
                 <span>Vehicles Available</span>
             </div>
 
@@ -1105,7 +1107,7 @@ footer a:hover {
         <div class="about-boxes">
 
             <div class="about-box">
-                <strong>11+</strong>
+                <strong>40+</strong>
                 <span>Vehicles in Collection</span>
             </div>
 

@@ -539,6 +539,11 @@
             color: #ff9800;
         }
 
+        .setup-link {
+
+            margin-top: 14px;
+        }
+
 
         /* =====================================================
            FOOTER TAGLINE
@@ -666,6 +671,8 @@
         }
 
     </style>
+
+    <link rel="stylesheet" href="polish.css">
 
 </head>
 
@@ -904,6 +911,18 @@
 
             </div>
 
+            <div class="register-text setup-link" id="admin-setup-link">
+
+                First time setting up?
+
+                <a href="AdminSetupServlet">
+
+                    Create the first admin account
+
+                </a>
+
+            </div>
+
 
             <!-- HOME -->
 
@@ -928,6 +947,11 @@
 
             </div>
 
+            <p id="setup-message" class="login-footer" role="status" hidden></p>
+            <p id="server-notice" class="login-footer" role="status" hidden>
+                Open this application through your Tomcat server to sign in or create an admin account.
+            </p>
+
 
         </div>
 
@@ -937,6 +961,24 @@
 
 </div>
 
+<script>
+    const setupMessages = {
+        complete: "Admin account created. Sign in with the email and password you just set.",
+        unavailable: "Admin setup is closed because an admin account already exists."
+    };
+    const setupCode = new URLSearchParams(window.location.search).get("setup");
+    const setupMessage = document.getElementById("setup-message");
+    const serverNotice = document.getElementById("server-notice");
+    const setupLink = document.getElementById("admin-setup-link");
+    if (window.location.protocol === "file:") {
+        serverNotice.hidden = false;
+        setupLink.hidden = true;
+    }
+    if (setupCode && setupMessages[setupCode]) {
+        setupMessage.textContent = setupMessages[setupCode];
+        setupMessage.hidden = false;
+    }
+</script>
 
 </body>
 

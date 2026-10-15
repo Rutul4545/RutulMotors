@@ -1017,7 +1017,9 @@
 
     </style>
 
-</head>
+    <link rel="stylesheet" href="polish.css?v=teal-footer-theme">
+
+    </head>
 
 
 <body>
@@ -1336,6 +1338,42 @@
 
     </div>
 
+
+</section>
+
+
+
+<!-- =====================================================
+     MEET THE OWNER
+===================================================== -->
+
+
+<section class="owner-section"
+         aria-labelledby="owner-title">
+
+    <div class="owner-portrait">
+        <img class="owner-photo"
+             src="images/ganesh-walunj.png"
+             alt="Ganesh Walunj, owner of Rutul Motors">
+        <div class="owner-years" aria-hidden="true">
+            <strong>~10</strong>
+            <span>years<br>in business</span>
+        </div>
+    </div>
+
+    <div class="owner-copy">
+        <div class="owner-eyebrow">The person behind Rutul Motors</div>
+        <h2 id="owner-title">Meet <span>Ganesh Walunj</span></h2>
+        <p class="owner-role">Owner, Rutul Motors</p>
+        <p class="owner-description">
+            For around 10 years, Ganesh Walunj has been part of the commercial
+            vehicle business, helping make Rutul Motors a trusted local
+            destination for businesses looking for the right vehicle.
+        </p>
+        <p class="owner-note">
+            Experience built over time. Service focused on moving your business forward.
+        </p>
+    </div>
 
 </section>
 

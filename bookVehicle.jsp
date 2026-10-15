@@ -307,6 +307,8 @@
 
     </style>
 
+    <link rel="stylesheet" href="polish.css">
+
 </head>
 
 

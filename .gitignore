@@ -1,0 +1,8 @@
+/target/
+*.class
+*.log
+.env
+.env.*
+!.env.example
+.rutulmotors-db.properties
+mysql-data/

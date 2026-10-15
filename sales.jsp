@@ -270,6 +270,8 @@ tr:hover {
 
 </style>
 
+<link rel="stylesheet" href="polish.css">
+
 </head>
 
 <body>
